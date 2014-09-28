@@ -1,0 +1,235 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+                <meta charset="utf-8">
+        <title>PlayerShip class / playership.dart Library / Dart Documentation</title>
+        <link rel="stylesheet" type="text/css"
+            href="../styles.css">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        </head>
+        <body data-library="playership.dart" data-type="PlayerShip">
+        <div class="page">
+        <div class="header">
+          <a href="../index.html"><div class="logo"></div></a>
+          <a href="../index.html">Dart Documentation</a>
+         &rsaquo; <a href="../playership.dart.html">playership.dart</a> &rsaquo; <a href="../playership.dart/PlayerShip.html">PlayerShip</a>        <div id="search-box">
+          <input type="search" name="q" id="q" autocomplete="off"
+              class="search-input" placeholder="Search API">
+        </div>
+        
+      </div>
+      <div class="drop-down" id="drop-down"></div>
+      
+        <div class="nav">
+        
+<h2><div class="icon-library"></div><a href="../metadata.html">metadata</a></h2><h2><div class="icon-library"></div><a href="../playership.dart.html">playership.dart</a></h2><ul class="icon">
+<li><div class="icon-class"></div><strong>PlayerShip</strong></li>
+</ul>
+</div>
+<div class="content">
+        <h2><strong>PlayerShip</strong>
+          class
+        </h2>
+        
+<button id="show-inherited" class="show-inherited">Hide inherited</button>
+<div class="doc">
+<pre class="source">
+class PlayerShip {
+ 
+ num x;
+ num y;
+ 
+ ImageElement image;
+ Rect rect;
+ num vmove = 0;
+ num hmove = 0;
+ num fire = 0;
+ num fired = 0;
+ List bullets = [];
+ num reload = 0;
+ 
+ PlayerShip(this.x, this.y){
+   image = new ImageElement(src:"Img/newplayer0.png");
+   rect = new Rect(x, y, image.width, image.height);
+ }
+ 
+ Update(){
+   // Movement
+   if (this.vmove!=0)
+     y += this.vmove * 4;
+   if (this.hmove!=0)
+     x += this.hmove * 4;
+ }
+ 
+}
+</pre>
+</div>
+<div>
+<h3>Constructors</h3>
+<div class="method"><h4 id="PlayerShip">
+<button class="show-code">Code</button>
+new <strong>PlayerShip</strong>(<a href="http://api.dartlang.org/dart_core/num.html">num</a> x, <a href="http://api.dartlang.org/dart_core/num.html">num</a> y) <a class="anchor-link" href="#PlayerShip"
+              title="Permalink to PlayerShip.PlayerShip">#</a></h4>
+<div class="doc">
+<pre class="source">
+PlayerShip(this.x, this.y){
+ image = new ImageElement(src:"Img/newplayer0.png");
+ rect = new Rect(x, y, image.width, image.height);
+}
+</pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Properties</h3>
+<div class="field"><h4 id="bullets">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/List.html">List</a>         <strong>bullets</strong> <a class="anchor-link"
+            href="#bullets"
+            title="Permalink to PlayerShip.bullets">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+List bullets = []
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="fire">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>fire</strong> <a class="anchor-link"
+            href="#fire"
+            title="Permalink to PlayerShip.fire">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num fire = 0
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="fired">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>fired</strong> <a class="anchor-link"
+            href="#fired"
+            title="Permalink to PlayerShip.fired">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num fired = 0
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="hmove">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>hmove</strong> <a class="anchor-link"
+            href="#hmove"
+            title="Permalink to PlayerShip.hmove">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num hmove = 0
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="image">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_html/ImageElement.html">ImageElement</a>         <strong>image</strong> <a class="anchor-link"
+            href="#image"
+            title="Permalink to PlayerShip.image">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+ImageElement image
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="rect">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_html/Rect.html">Rect</a>         <strong>rect</strong> <a class="anchor-link"
+            href="#rect"
+            title="Permalink to PlayerShip.rect">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+Rect rect
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="reload">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>reload</strong> <a class="anchor-link"
+            href="#reload"
+            title="Permalink to PlayerShip.reload">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num reload = 0
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="vmove">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>vmove</strong> <a class="anchor-link"
+            href="#vmove"
+            title="Permalink to PlayerShip.vmove">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num vmove = 0
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="x">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>x</strong> <a class="anchor-link"
+            href="#x"
+            title="Permalink to PlayerShip.x">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num x
+</pre>
+</div>
+</div>
+<div class="field"><h4 id="y">
+<button class="show-code">Code</button>
+<a href="http://api.dartlang.org/dart_core/num.html">num</a>         <strong>y</strong> <a class="anchor-link"
+            href="#y"
+            title="Permalink to PlayerShip.y">#</a>
+        </h4>
+        <div class="doc">
+<pre class="source">
+num y
+</pre>
+</div>
+</div>
+</div>
+<div>
+<h3>Methods</h3>
+<div class="method"><h4 id="Update">
+<button class="show-code">Code</button>
+dynamic <strong>Update</strong>() <a class="anchor-link" href="#Update"
+              title="Permalink to PlayerShip.Update">#</a></h4>
+<div class="doc">
+<pre class="source">
+Update(){
+ // Movement
+ if (this.vmove!=0)
+   y += this.vmove * 4;
+ if (this.hmove!=0)
+   x += this.hmove * 4;
+}
+</pre>
+</div>
+</div>
+</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="footer">
+          <div>This page was generated at 2013-05-07 22:24:19.121</div>
+        </div>
+        <script async src="../client-static.js"></script>
+        </body></html>
+        
